@@ -1,0 +1,60 @@
+<div class="outer">
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h2 class="pt-3 font-weight-bold" style="font-weight: bold;">Sign Up</h2>
+                    </div>
+                    <div class="panel-body p-3">
+                        <form [formGroup]="signUp" (ngSubmit)="submitSignUP()">
+                            <div class="form-group pt-3">
+                                 <div class="input-field">
+                                    <span class="fa fa-user p-2"></span>
+                                    <input type="text" placeholder="Username" formControlName="username">
+                                 </div>
+                            </div>
+                            <small class="text-danger" *ngIf="username && username.touched && username.invalid">*Username is required</small>
+
+                            <div class="form-group pt-3">
+                                <div class="input-field">
+                                   <span class="fa fa-mobile p-2"></span>
+                                   <input type="text" placeholder="Phone Number" formControlName="phone_Num">
+                                </div>
+                           </div>
+                           <small class="text-danger" *ngIf="phone_Num && phone_Num.touched && phone_Num.invalid">*Phone number is required</small>
+
+                            <div class="form-group pt-3">
+                                <div class="input-field">
+                                   <span class="fa fa-envelope p-2"></span>
+                                   <input type="text" placeholder="Email" formControlName="Email">
+                                </div>
+                           </div>
+                           <small class="text-danger" *ngIf="Email && Email.touched && Email.invalid">*Email is required</small>
+
+                            <div class="form-group pt-3">
+                                 <div class="input-field">
+                                    <span class="fa fa-lock p-2"></span>
+                                    <input [type]="type" placeholder="Password" formControlName="Password">
+                                    <span class="fa {{eyeIcon}}" style="font-weight: bold;" (click)="hideShow()"></span>
+                                 </div>
+                            </div>
+                            <small class="text-danger" *ngIf="Password && Password.touched && Password.invalid">*Password is required</small>
+
+                            <div class="form-group pt-3">
+                                <div class="input-field">
+                                   <span class="fa fa-lock p-2"></span>
+                                   <input [type]="Type" placeholder="Confirm Password" formControlName="Confirm_Password">
+                                   <span class="fa {{iIcon}}" style="font-weight: bold;" (click)="hideNDShow()"></span>
+                                </div>
+                           </div>
+                           <small class="text-danger" *ngIf="Confirm_Password && Confirm_Password.touched && Confirm_Password.invalid">*Confirm password is required</small>
+                            
+                            <button class="btn btn-primary btn-block mt-4 w-100" type="submit">Sign up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

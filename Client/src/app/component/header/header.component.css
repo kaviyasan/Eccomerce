@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Aref+Ruqaa+Ink&family=Bungee+Spice&family=Combo&family=Fredoka+One&family=Lobster&family=Nerko+One&family=Pattaya&family=Permanent+Marker&family=Playfair+Display:wght@400;500&family=Poppins:ital,wght@0,100;0,400;0,500;0,700;0,800;1,500&family=Rubik+80s+Fade&family=Rubik+Bubbles&family=Rubik+Dirt&family=Rubik+Glitch&family=Secular+One&family=Unbounded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Aref+Ruqaa+Ink&family=Bungee+Shade&family=Bungee+Spice&family=Combo&family=Fredoka+One&family=Lobster&family=Nerko+One&family=Pattaya&family=Permanent+Marker&family=Playfair+Display:wght@400;500&family=Poppins:ital,wght@0,100;0,400;0,500;0,700;0,800;1,500&family=Rubik+80s+Fade&family=Rubik+Bubbles&family=Rubik+Dirt&family=Rubik+Glitch&family=Secular+One&family=Unbounded&display=swap');
+.example-spacer {
+    flex: 1 1 auto;
+  }
+.text{
+    font-family: 'Rubik 80s Fade', cursive;
+    /* font-family: 'Bungee Shade', cursive; */
+
+    font-size: 23px;
+}
+.form-control{
+  border-radius: 3px;
+  width: 500px;
+  height: 30px;
+  border: none;
+  margin-right: 40px;
+}
+.searchIcon{
+  position: absolute;
+  /* z-index: 2; */
+  left: 83%;
+  /* bottom: 5px; */
+  top: 20px;
+  color: black;
+}
+.badge{
+  font-size: 10px;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.account{
+  margin-right: 10px;
+}
+  

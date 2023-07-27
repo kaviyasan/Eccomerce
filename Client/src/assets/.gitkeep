@@ -1,0 +1,22 @@
+<mat-icon>store</mat-icon>
+<mat-icon>search</mat-icon>
+<mat-icon>add_shopping_cart</mat-icon>
+
+
+const currentUrl = this.router.url;
+    this.router.navigateByUrl('/', {skipLocationChange: true}).then(() => {
+        this.router.navigate([currentUrl]);
+    });
+
+
+    onRefresh() {
+        this.router.routeReuseStrategy.shouldReuseRoute = function(){return false;};
+      
+        let currentUrl = this.router.url + '?';
+      
+        this.router.navigateByUrl(currentUrl)
+          .then(() => {
+            this.router.navigated = false;
+            this.router.navigate([this.router.url]);
+          });
+        }

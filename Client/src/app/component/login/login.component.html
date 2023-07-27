@@ -1,0 +1,57 @@
+<div class="outer">
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h2 class="pt-3 font-weight-bold text">Login</h2>
+                    </div>
+                    <div class="panel-body p-3">
+                        <form [formGroup]="login" (ngSubmit)="submitLogin()">
+                            <div class="form-group pt-3">
+                                 <div class="input-field">
+                                    <span class="fa fa-user p-2"></span>
+                                    <input type="text" placeholder="Username" formControlName="username">
+                                 </div>
+                            </div>
+                            <small class="text-danger" *ngIf="username && username.touched && username.invalid">*Username is required</small>
+
+                            <div class="form-group pt-3">
+                                <div class="input-field">
+                                   <span class="fa fa-envelope p-2"></span>
+                                   <input type="text" placeholder="Email" formControlName="Email">
+                                </div>
+                           </div>
+                           <small class="text-danger" *ngIf="Email && Email.touched && Email.invalid">*Email is required</small>
+
+                            <div class="form-group pt-3">
+                                 <div class="input-field">
+                                    <span class="fa fa-lock p-2"></span>
+                                    <input [type]="type" placeholder="Password" formControlName="Password">
+                                    <span class="fa {{eyeIcon}}" style="font-weight: bold;" (click)="hideShow()"></span>
+                                 </div>
+                            </div>
+                            <small class="text-danger" *ngIf="Password && Password.touched && Password.invalid">*Password is required</small>
+
+                            <div class="pt-3"><a class="text-right" style="text-align: end;" (click)="forgotPassword()">Forgot Password?</a></div>
+
+                            <button class="btn btn-primary btn-block mt-4 w-100" type="submit">Login</button>
+                            <div class="text-center pt-4 text-muted">Don't have an account? <a id="link" [routerLink]="['/signup']">Sign Up</a></div>
+
+                            <button *ngIf="!user">G</button>
+
+<div *ngIf="user">
+  <img src="{{ user.photoUrl }}">
+  <div>
+    <h4>{{ user.name }}</h4>
+    <p>{{ user.email }}</p>
+  </div>
+</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

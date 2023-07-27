@@ -1,0 +1,10 @@
+<div class="center">
+    <h1><strong>Upload Product Detail File</strong></h1>
+    <div class="file">
+      <form>
+        <input type="file" accept=".csv" (change)="onChange($event)">
+        <button mat-raised-button color="primary" type="submit" (click)="fileUpload()" name="productFile">Submit</button>
+    </form>
+    </div>
+     
+   </div>

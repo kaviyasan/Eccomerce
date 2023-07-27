@@ -1,0 +1,18 @@
+ProductId,category,productname,quantity,price,Image
+1210P01,Electronics,LED TV,10,25000,https://user-images.githubusercontent.com/123388564/214069811-f17badab-d193-4e2e-8f67-7f3d7c1badf6.png
+1210P02,Furnitures,Cupboard,5,15000,https://user-images.githubusercontent.com/123388564/214070441-75b4db34-2619-49b9-abff-3cf6ca1e4992.png
+1210P03,Fashion,salwar&leggings,10,600,https://user-images.githubusercontent.com/123388564/214070897-86b98891-145b-4b40-adb9-477fe3986f3a.png
+1210P04,Electronics,Microwave oven,10,10000,https://user-images.githubusercontent.com/123388564/214073739-cdd4668f-bdea-416f-aee8-f9478cbc1611.png
+1210P05,Furnitures,Bed,6,18000,https://user-images.githubusercontent.com/123388564/214074261-8e16c7c7-6dc4-4e06-9ce1-ca0a9bb7a89c.png
+1210P06,Fashion,Eye Liner,20,350,https://user-images.githubusercontent.com/123388564/214074832-adbb4d1d-a366-42c5-aa49-414055d4aab9.png
+1210P07,Electronics,Head Phone,8,1500,https://user-images.githubusercontent.com/123388564/214075445-a699fd14-4a95-480f-a3a0-552f31aa1f23.png
+1210P08,Furnitures,Sofa,5,20000,https://user-images.githubusercontent.com/123388564/214075900-06611d17-908e-4138-9ce9-612e47073503.png
+1210P09,Fashion,Bracelet,25,300,https://user-images.githubusercontent.com/123388564/214076220-165d80b5-78c0-481e-bbdc-b78998c9c7b4.png
+1210P10,Electronics,Water Purifier,10,2000,https://user-images.githubusercontent.com/123388564/214076821-018253ea-1ee7-411c-9970-86fe7069b3e4.png
+1210P11,Furnitures,Dinning Table,6,12000,https://user-images.githubusercontent.com/123388564/214077440-df5d5741-8450-4cfd-8893-85202a29c2fc.png
+1210P12,Fashion,Anarkali Kurta,10,700,https://user-images.githubusercontent.com/123388564/214077925-beec5ac9-023b-42dc-b8ec-16b32f22428e.png
+1210P13,Electronics,Laptop,7,28000,https://user-images.githubusercontent.com/123388564/214078823-f90ba8e1-2333-41d2-874e-67aecea71179.png
+1210P13,Fashion,Lipstick,25,250,https://user-images.githubusercontent.com/123388564/214079132-6ff4f4cb-f3df-4d60-bb06-ef33466582ea.png
+1210P14,Furnitures,Table,10,1700,https://user-images.githubusercontent.com/123388564/214079714-0a510b41-9bc6-4dda-979b-82c5c50924e8.png
+1210P15,Fashion,Robe T-Shirt Hood Dress Jeans,15,500,https://user-images.githubusercontent.com/123388564/214079998-9048acd4-24c4-4d59-a0f8-a180c23ec1dc.png
+1210P16,Fashion,Jeans Pant,15,650,https://user-images.githubusercontent.com/123388564/214081117-46c21f28-d661-43f0-923f-6e51265d95e7.png

@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+  <a [routerLink]="['/product']">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>store</mat-icon>
+    </button>
+    <span class="text">KavSang</span></a>
+    <span class="example-spacer"></span>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="search products" [(ngModel)]="searchItem" (keyup)="search($event)">
+      <mat-icon class="searchIcon">search</mat-icon> 
+    </div>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" class="account" (click)="loginPage()">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" (click)="gotoCart()" >
+      <mat-icon>add_shopping_cart</mat-icon>
+      
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" (click)="admin()" >
+      <mat-icon>how_to_reg</mat-icon>
+      
+    </button>
+  </mat-toolbar>
+  

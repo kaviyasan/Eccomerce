@@ -1,0 +1,43 @@
+<app-header></app-header>
+<div class="main">
+    <div class="flex" *ngFor="let a of product">
+        <div class="div1">
+           <div class="img">
+            <img src="{{a.Image}}" alt="">
+           </div>
+        </div>
+        <div class="main1">
+            <div class="content">
+                <h3 class="pID">Product Id :{{a.ProductId}}</h3>
+                <h1 class="pName">{{a.productname}}</h1>
+                <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad cum optio architecto pariatur provident quas nisi accusamus aspernatur ea non! ipsum dolor sit amet consectetur adipisicing elit. Aperiam aliquid voluptas, minima ad hic, laboriosam sequi facere incidunt quod nostrum quidem quam eius deleniti debitis! Dolor officiis temporibus dolore pariatur.</p>
+                <h3 class="price">Price : <small class="smallFont">{{a.price}}</small></h3>
+                <form [formGroup]="onlineOrder">
+                    <div class="plusNDminus" class="qty">
+                        <!-- <button type="button" class="btn" (click)="inc(no,a)"><i class="fa fa-plus-circle"
+                                aria-hidden="true"></i></button> -->
+                        <input type="number" formControlName="Quantity" class="input">
+                        <!-- <button type="button" class="btn" (click)="dec(no)"><i class="fa fa-minus-circle"
+                                aria-hidden="false"></i></button> -->
+                       
+                        <!-- <button (click)="enough()" mat-raised-button color="warn">Ok</button> -->
+                    </div>
+                    <input type="text" formControlName="productname" *ngIf="false">
+                    <input type="text" formControlName="price" *ngIf="false">
+                    <input type="text" formControlName="Image" *ngIf="false">
+                    <div class="flex">
+                        <div class="primary">
+                            <button type="submit" (click)="addtoCart()" class="btn btn-primary">Update</button> 
+                        </div>
+                        <div class="danger">
+                            <button type="submit" class="btn btn-danger" (click)="backProduct()">Back</button>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,31 @@
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  img{
+    width: 200px;
+    height: 200px;
+  }
+  
+  td, th {
+    /* width: 25%; */
+    color: white;
+  }
+  .container{
+    max-width: 1200px;
+    /* background: #28292d;\ */
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  section{
+    width: 100%;
+    /* height: 595px; */
+    /* background: rgb(82, 78, 78); */
+  }
+   th{
+    background-color: rgb(70, 8, 8);
+   }

@@ -1,0 +1,42 @@
+<p>binding works!</p>
+<button (click)="clickMe()">Click Me</button>
+{{data}}
+
+<!-- <input [attr.type]="{{type}}" [value]="firstname">
+<input [attr.type]="text" [value]="lastname"> -->
+<br>
+<br>
+
+<table [attr.height]="h" [attr.width]="w">
+    <tr>
+       <td [attr.colspan]="clspn"> A + B </td>
+    </tr>
+    <tr>
+       <td> C </td>
+       <td> D </td>
+    </tr>
+  </table>
+  <input [attr.type]="type">
+
+  <p [class]="myClass">hi hello</p>
+
+  <h1 [style.color]="color">Something</h1>
+
+
+  <table style="width:100%;border: 1px;">
+    <tr>
+      <th>Name</th>
+      <td>Jill</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Phone</th>
+      <td>555-1234</td>
+    </tr>
+    <tr>
+      <td>555-8745</td>
+    </tr>
+  </table>
+  <input type="text" [(ngModel)]="para">
+  {{para}}
+
+  <img [attr.src]="image" width="50px" height="50px">
